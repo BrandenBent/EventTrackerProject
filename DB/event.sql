@@ -22,6 +22,10 @@ DROP TABLE IF EXISTS `ranger` ;
 
 CREATE TABLE IF NOT EXISTS `ranger` (
   `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NULL,
+  `calorie_count` INT NULL,
+  `meal` VARCHAR(45) NULL,
+  `issues` VARCHAR(45) NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -41,7 +45,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `eventdb`;
-INSERT INTO `ranger` (`id`) VALUES (1);
+INSERT INTO `ranger` (`id`, `name`, `calorie_count`, `meal`, `issues`) VALUES (1, 'Banana', 105, 'breakfast', 'None');
 
 COMMIT;
 
