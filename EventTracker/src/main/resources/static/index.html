@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Meal Tracker</title>
+<script src="js/script.js"></script>
+</head>
+<body>
+  <form name="lookup">
+    <input type="number" name="mealId">
+    <button type="lookup" name="button">Get Meal by Id</button>
+  </form>
+
+  <div class="output">
+    <div id="mealData"></div>
+    <div class="mealRemove"></div>
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+  <form name="addForm">
+    <table>
+      <tbody>
+        <tr class="row">
+          <td for="name">Food name: </td>
+          <td>
+            <input type="text" name="name" value="Poptart">
+          </td>
+        </tr>
+        <tr class="row">
+          <td for="calories">Calories: </td>
+          <td>
+            <input type="number" name="calories" value="150">
+          </td>
+        </tr>
+        <tr class="row">
+          <td row="row">Meal: </td>
+          <td>
+            <input type="text" name="meal" value="Breakfast">
+          </td>
+        </tr>
+        <tr class="row">
+          <td for="issues">Issues: </td>
+          <td>
+            <input type="text" name="issues" value="Burning Sensations">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button action="submint" type="submit" name="submit">Submit</button>
+  </form>
+
+</body>
+</html>
